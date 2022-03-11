@@ -9,7 +9,7 @@ body {
 .container {
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 1fr 5fr;
   grid-template-rows: 1.5fr 5fr;
   grid-template-areas:
     "sidebar header"
@@ -22,7 +22,7 @@ body {
   color: #f0f9ff;
   display: grid;
   grid-template-rows: 80px 1fr;
-  padding: 20px 0 0 20px;
+  padding: 20px 20px 0 20px;
 }
 
 .sidebar-wrapper > h1,
