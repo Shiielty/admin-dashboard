@@ -9,7 +9,7 @@ body {
 .container {
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 350px 1fr;
+  grid-template-columns: 300px 1fr;
   grid-template-rows: 1.5fr 5fr;
   grid-template-areas:
     "sidebar header"
@@ -19,6 +19,42 @@ body {
 .sidebar-wrapper {
   background-color: #0ea5e9;
   grid-area: sidebar;
+  color: #f0f9ff;
+  display: grid;
+  grid-template-rows: 80px 1fr;
+  padding: 20px 0 0 20px;
+}
+
+.sidebar-wrapper > h1,
+.sidebar-menu > li {
+  display: flex;
+  align-items: center;
+}
+
+h1 > svg {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.sidebar-menu {
+  padding: 0 8px;
+  margin-top: 20px;
+}
+
+.sidebar-menu > li {
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 0;
+}
+
+.sidebar-menu > li:nth-child(7) {
+  padding-top: 64px;
+}
+
+li > svg {
+  margin-right: 20px;
 }
 
 .header-wrapper {
