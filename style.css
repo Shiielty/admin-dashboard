@@ -1,7 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
-  text-align: center;
+.container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  grid-template-rows: 1.5fr 5fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main-content";
+}
+
+.sidebar-wrapper {
+  background-color: #0ea5e9;
+  grid-area: sidebar;
+}
+
+.header-wrapper {
+  background-color: #f0f9ff;
+  grid-area: header;
+}
+
+.main-content-wrapper {
+  background-color: #bae6fd;
+  grid-area: main-content;
 }
