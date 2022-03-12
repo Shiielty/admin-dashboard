@@ -1,6 +1,6 @@
 # Project: Admin Dashboard
 
-![full-page-screenshot](.public\Screenshot Admin Dashboard.png)
+![full-page-screenshot](./public/Screenshot%20Admin%20Dashboard.png)
 
 In this project, I made a simple Admin Dashboard page with HTML and Grid CSS for arrange the layout of the page.
 
