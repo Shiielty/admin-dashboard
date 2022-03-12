@@ -11,13 +11,27 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-decoration: underline 2px white;
+}
+
+h2 {
+  font-size: 1.1rem;
+}
+
+h3 {
+  font-size: 1rem;
 }
 
 .container {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 5fr;
-  grid-template-rows: 1.5fr 5fr;
+  grid-template-rows: 1fr 5fr;
   grid-template-areas:
     "sidebar header"
     "sidebar main-content";
@@ -50,7 +64,6 @@ h1 > svg {
 
 .sidebar-menu > li {
   list-style-type: none;
-  font-size: 20px;
   font-weight: 700;
   padding: 10px 0;
 }
@@ -92,6 +105,7 @@ li > svg {
 
 .header-left > input[type="search"] {
   width: 100%;
+  padding: 0 10px;
 }
 
 .header-top > .header-right {
@@ -143,7 +157,7 @@ a:hover {
 }
 
 .header-bottom > .header-left > p:last-of-type {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-top: -10px;
 }
 
@@ -174,4 +188,41 @@ button:hover {
 .main-content-wrapper {
   background-color: var(--light-blue);
   grid-area: main-content;
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  padding: 20px;
+}
+
+.project {
+  margin-right: 20px;
+}
+
+.card-wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  background-color: var(--white);
+  padding: 15px;
+  border-left: 8px solid orange;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.announcements-wrapper,
+.trendings-wrapper {
+  background-color: var(--white);
+  padding: 10px;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.announcement-item {
+  border-bottom: 1px solid rgb(194, 194, 194);
+}
+
+.announcement-item:last-child {
+  border: none;
 }
