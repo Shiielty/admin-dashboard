@@ -18,6 +18,7 @@ body {
 h1 {
   font-size: 1.5rem;
   text-decoration: underline 2px white;
+  margin-left: 8px;
 }
 
 h2 {
@@ -68,7 +69,7 @@ a:hover {
 }
 
 h1 > svg {
-  margin-right: 10px;
+  margin-right: 18px;
   width: 40px;
   height: 40px;
 }
@@ -96,7 +97,7 @@ li > svg {
   grid-area: header;
   display: grid;
   grid-template-rows: 80px 1fr;
-  box-shadow: 5px 0px 10px black;
+  box-shadow: 5px 0px 10px #777777;
   z-index: 1;
 }
 
@@ -122,7 +123,7 @@ li > svg {
   width: 100%;
   padding: 3px 10px;
   border-radius: 0.5rem;
-  border: 2px solid var(--blue);
+  border: 1px solid rgb(175, 175, 175);
 }
 
 .header-top > .header-right {
@@ -214,6 +215,7 @@ button:hover {
   border-radius: 0.5rem;
   font-size: 0.9rem;
   display: grid;
+  box-shadow: 3px 3px 3px #cfcfcf;
 }
 
 .card p {
@@ -240,6 +242,7 @@ button:hover {
   padding: 10px;
   border-radius: 0.5rem;
   font-size: 0.8rem;
+  box-shadow: 3px 3px 3px #cfcfcf;
 }
 
 .announcement-item p {
